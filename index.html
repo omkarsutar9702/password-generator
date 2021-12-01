@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Password Generator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+          <h1 class="title">Password Generator!</h1>
+          <h3 class="password-dis"  id="password_display">password</h3>
+            <form id="form">
+                <label for="password_char_number">Number of characters</label>
+                <div class = "form-container">
+                  <input type="range" min="1" max="20" id="password_char_range" , value="8">
+                  <input class="numberinput" type="number" min="1" max="20" id="password_char_number" value="8" >
+                </div>
+
+                <label for = "password_upper">Include upper case letters</label>
+                <input type="checkbox" id="password_upper">
+
+                <label for = "password_num">Include Number</label>
+                <input type="checkbox" id="password_num">
+
+                <label for = "password_symbol">Include Symbols</label>
+                <input type="checkbox" id="password_symbol">
+
+                <button type="submit" class="btn">Generate Password</button>
+            </form>
+
+      </div>
+  </body>
+</html>
